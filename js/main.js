@@ -3,6 +3,8 @@
  * Utilizza una funzione per determinare e ritornare la parola più lunga.
 */
 
+/* inzio commento
+
 var parola1 = prompt("Inserisci la prima parola").trim();
 var parola2 = prompt("Inserisci la seconda parola").trim();
 
@@ -21,23 +23,39 @@ function lunghezzaParola (word1, word2){
 
   }else{
     console.log("Le parole sono uguali");
-  }
+  } 
 }
 
+fine commento
+*/ 
 
-
-
-
-
-
-
-
-
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
  * Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
 */
+
+
+/* inzio commento
+
+var num = parseInt(prompt("Inserisci un numero"));
+
+while ( (num < 1) || (isNaN(num))){
+
+  num = parseInt(prompt("Inserimento errato. Reinserisci un numero"));
+
+}
+
+if( (num % 2) == 0){
+  console.log("Il numero inserito " + num + " è pari");
+} else {
+  ++num;
+  console.log("Il numero inserito è un numero dispari, il num successivo è " + num);
+}
+
+fine commento
+*/ 
+
 
 
 /**
