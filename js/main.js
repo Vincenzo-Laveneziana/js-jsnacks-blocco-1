@@ -63,6 +63,7 @@ fine commento
  * e una lista di cognomi (‘Forghieri’, ‘Papagni’, ‘Marazzini’),
  * Gatsby vuole generare una falsa lista di 5 invitati.
 */
+
 /*
  inzio commento
 
@@ -99,7 +100,8 @@ fine commento
  * Prova prima senza funzione e poi con funzione.
 */
 
-
+/*
+ inzio commento
 var numeri = [1, 4, 2, 15, 120, 17, 3];
 
 var somma = 0;
@@ -107,7 +109,7 @@ var contatore = 0;
 
 for(var inps = 0; inps < numeri.length; inps++ ){
 
-  if(inps % 2 !== 0 ){
+  if(inps % 2 != 0 ){
     
     console.log("il " + ++contatore +"° numero che si trova in posizione dispari nell'array " + "(numeri[" + inps +"]) è " + numeri[inps]);
     
@@ -118,3 +120,36 @@ for(var inps = 0; inps < numeri.length; inps++ ){
 
 console.log("la somma dei numeri in posizione dispari è " + somma);
 
+fine commento
+*/
+
+///snack bonus con funzione
+
+
+
+var numeri = [1, 4, 2, 15, 120, 17, 3];
+
+
+var sommaDispari  = posizioneDispari(numeri);
+console.log("La somma dei numeri in posizione dispari è " + sommaDispari);
+
+
+function posizioneDispari(num){
+
+  var somma = 0;
+  var contatore = 0;
+
+  for(var inps = 0; inps < num.length; inps++ ){
+
+    if(inps % 2 != 0 ){
+       
+      console.log("il " + ++contatore +"° numero che si trova in posizione dispari nell'array " + "(numeri[" + inps +"]) è " + numeri[inps]);
+
+      somma += numeri[inps];
+    }
+    
+  }
+
+  return somma;
+
+}
