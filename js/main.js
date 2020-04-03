@@ -56,16 +56,65 @@ if( (num % 2) == 0){
 fine commento
 */ 
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
  * Generatore di “nomi cognomi” casuali: prendendo una lista di nomi (‘Michele’, ‘Fabio’, ‘Roberto’) 
  * e una lista di cognomi (‘Forghieri’, ‘Papagni’, ‘Marazzini’),
  * Gatsby vuole generare una falsa lista di 5 invitati.
 */
+/*
+ inzio commento
+
+var nomi = ["Michele", "Fabio", "Roberto", "Vincenzo", "Oronzo" , "Gino"];
+var cognomi = ["Forghieri", "Papagni", "Marazzini", "Laveneziana", "Bevi l'acqua", "Spegni Luce"];
+
+var invitati = [];
+
+
+for( var inps = 0; inps <= 4; inps++){
+
+  var randomN = Math.floor(Math.random()* nomi.length);
+  //console.log(randomN); i numeri partono da 0 e arrivano a 5 
+  var randomC = Math.floor(Math.random()* cognomi.length);
+  
+  var nuovoNeC = nomi[randomN] + " " + cognomi[randomC];
+
+  invitati.push(nuovoNeC);
+  
+  
+}
+
+console.log(invitati);
+
+fine commento
+*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /**
  * Crea un array di numeri interi, ad esempio (1, 4, 2, 15, 120, 17, 3) 
  * e fai la somma di tutti gli elementi che sono in posizione dispari. 
  * Prova prima senza funzione e poi con funzione.
 */
+
+
+var numeri = [1, 4, 2, 15, 120, 17, 3];
+
+var somma = 0;
+var contatore = 0;
+
+for(var inps = 0; inps < numeri.length; inps++ ){
+
+  if(inps % 2 !== 0 ){
+    
+    console.log("il " + ++contatore +"° numero che si trova in posizione dispari nell'array " + "(numeri[" + inps +"]) " + numeri[inps]);
+    
+    somma += numeri[inps];
+    
+  }
+}
+
+console.log("la somma dei numeri in posizione dispari è " + somma);
+
