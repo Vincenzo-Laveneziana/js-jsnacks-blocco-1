@@ -109,7 +109,7 @@ for(var inps = 0; inps < numeri.length; inps++ ){
 
   if(inps % 2 !== 0 ){
     
-    console.log("il " + ++contatore +"° numero che si trova in posizione dispari nell'array " + "(numeri[" + inps +"]) " + numeri[inps]);
+    console.log("il " + ++contatore +"° numero che si trova in posizione dispari nell'array " + "(numeri[" + inps +"]) è " + numeri[inps]);
     
     somma += numeri[inps];
     
